@@ -1,7 +1,7 @@
 var fs = require('fs');
 var Buffer = require('buffer').Buffer;
 
-var bundlesDir = '//alex/agfs/arcgisserver/directories/arcgiscache';
+var bundlesDir = '//my_network_cache_share/arcgisserver/directories/arcgiscache';
 function Pad(num, zoom, type){
 	var padding = ((zoom>17 && type=="R") || (zoom>18 && type=="C")) ? 5 : 4;
 	while(num.length<padding)
